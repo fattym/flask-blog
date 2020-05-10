@@ -8,29 +8,19 @@
 
 # DESCRIPTION
 
-This is a Python-Flask Application that allows users to create one minute pitch. You only have 60 seconds to impress someone. 1 minute can make or break you.
-The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them.
+The past few weeks have proven that you can learn anything. And a great way to solidify your knowledge is to teach it to other people. There is no better way to express your ideas and opinions than with a personal blog.
 
 ## User Story
 
-- Users can see the pitches other people have posted.
-
-- Users can svote on the pitch they liked and give it a downvote or upvote.
-
-- Users can sign in to leave a comment.
-
-- Users can register on the website.
-
-- Users can receive a welcoming email once they sign up.
-
-- Users can view the pitches they have created in their profile page..
-
-- Users can comment on the different pitches and leave feedback. 
-
-- Users can submit a pitch in any category. 
-
-- Users can view the different categories. 
-
+1. As a user, I would like to view the blog posts on the site
+1. As a user, I would like to comment on blog posts
+1. As a user, I would like to view the most recent posts
+1. As a user, I would like to an email alert when a new post is made by joining a subscription.
+1. As a user, I would like to see random quotes on the site
+1. As a writer, I would like to sign in to the blog.
+1. As a writer, I would also like to create a blog from the application.
+1. As a writer, I would like to delete comments that I find insulting or degrading.
+1. As a writer, I would like to update or delete blogs I have created.
 ## Known Bugs
 If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue here by including your search query and the expected result.
 
