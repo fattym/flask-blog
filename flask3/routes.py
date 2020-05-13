@@ -7,6 +7,7 @@ from flask3.forms import RegistrationForm, LoginForm,UpdateAccountForm,PostForm
 from flask3.models import User,Post
 from flask_login import login_user,current_user,logout_user,login_required
 
+
 @app.route('/')
 @app.route('/home')
 def home():
