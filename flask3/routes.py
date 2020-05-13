@@ -149,3 +149,15 @@ def user_posts(username):
         .order_by(Post.date_posted.desc())\
         .paginate(page=page, per_page=5)
     return render_template('user_posts.html', posts=posts, user=user)
+
+@posts.route('/post/comments',methods=['GET','POST'])
+@login_required
+def comments():    
+    form= CommentsForm()  
+    if form.validate_on_submit():
+        new_comment = Comment(title=form.title.data, content=form.content.data, author=current_user)
+        db.session.add(new_comment)
+        db.session.commit()
+        flash('Your comment has been created!','success')
+        return redirect(url_for('main.home'))
+    return render_template('comments.html',title='Comment',form=form, legend='New comment')
