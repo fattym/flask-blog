@@ -60,6 +60,10 @@
             <h2><a class="article-title" href="{{ url_for('post', post_id=post.id) }}">{{ post.title }}</a></h2>
             <p class="article-content">{{ post.content }}</p>
           </div>
+          <a href="{{ url_for('comments') }}">
+           writing comment
+         
+        </a>
         </article>
     {% endfor %}
 </div>
